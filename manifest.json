@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+
+	"name": "Darken",
+	"description": "Make web pages dark.",
+	"version": "0.1",
+	"author": "Ahmet ALTUN - github.com/ahmetaltun",
+	"homepage_url": "https://github.com/ahmetaltun/darken",
+	"background": {
+		"scripts": ["background/bg.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["js/content.js"],
+			"run_at": "document_idle",
+			"all_frames": true,
+			"match_about_blank": true
+		}
+	],
+	"permissions": ["webNavigation", "storage", "tabs", "<all_urls>"],
+	"browser_action": {
+		"default_title": "Darken",
+		"default_popup": "html/index.html",
+		"default_icon": {
+			"16": "icons/icon-16.png",
+			"24": "icons/icon-24.png",
+			"32": "icons/icon-32.png",
+			"40": "icons/icon-40.png",
+			"48": "icons/icon-48.png",
+			"56": "icons/icon-56.png",
+			"64": "icons/icon-64.png"
+		}
+	}
+}
