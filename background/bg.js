@@ -1,4 +1,4 @@
-chrome.webNavigation.onCompleted.addListener(function(details) {
+/*chrome.webNavigation.onCompleted.addListener(function(details) {
 	chrome.tabs.insertCSS(
 		details.tabId,
 		{
@@ -6,7 +6,8 @@ chrome.webNavigation.onCompleted.addListener(function(details) {
 			allFrames: true
 		},
 		function() {
-			console.log('from background.js');
+			//console.log('from background.js');
 		}
 	);
 });
+*/
