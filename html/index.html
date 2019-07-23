@@ -8,9 +8,27 @@
 		<title>Darken</title>
 	</head>
 	<body>
+		<nav>
+			<h2>Darken</h2>
+		</nav>
 		<div class="container">
-			<!-- here -->
+			<h3>Active / Deactive</h3>
+			<div class="onoffswitch">
+				<input
+					type="checkbox"
+					name="onoffswitch"
+					class="onoffswitch-checkbox"
+					id="cbDarkenSwitch"
+					checked
+				/>
+				<label class="onoffswitch-label" for="cbDarkenSwitch">
+					<span class="onoffswitch-inner"></span>
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
 		</div>
 		<!-- darken js -->
+		<script src="../js/darken.js" type="module"></script>
+		<script src="../js/darkenModule.js" type="module"></script>
 	</body>
 </html>
