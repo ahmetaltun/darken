@@ -2,7 +2,7 @@
 
 Make web pages dark. (Opera Extension)
 
-### How can i instal?
+### How do I use it?
 
 - Get latest .crx file from releases page
 - Drag and drop to opera extensions window
